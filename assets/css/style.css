@@ -1,15 +1,6 @@
-.container {
-  gap: 20px;
-}
-
 .apple-logo {
   width: 40px;
   height: 40px;
-}
-
-.img {
-  max-width: 200px;
-  max-height: 350px;
 }
 
 .container-img,

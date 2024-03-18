@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <header class="mb-5">
 
-        <nav class="navbar navbar-expand-lg bg-primary bg-body-tertiary" data-bs-theme="dark">
+    <div class="container text-center">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <nav class="navbar navbar-expand-lg bg-primary bg-body-tertiary" data-bs-theme="dark">
           <div class="container">
             <a class="navbar-brand" href="#"><img class="apple-logo" src="image/apple_logo_icon_132879.png" alt="apple-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,12 +46,13 @@
               </form>
             </div>
           </div>
-        </nav>
-      
-    </header>
-    <main class="main">
-      <div class="container mb-5 d-flex flex-wrap justify-content-between">
-        <div class="container-img">
+          </nav>
+        </div>
+      </div>
+    
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row g-3">
+        <div class="col-12 col-sm-12 col-md-6 col-xl-3">
           <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -74,8 +78,8 @@
             </button>
           </div>
         </div>
-        <div class="container-accordion container-sm">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="col-12 col-sm-12 col-md-6 col-xl-6">
+          <div class="accordion" id="accordionFlushExample">
             <div class="accordion-item bg-primary-subtle border border-success">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -116,61 +120,38 @@
             </div>
           </div>
         </div>
-        <div class="container-form container-sm bg-light pb-3">
-
-            <form class="">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12">
-              </div>
-              <div class="col-12 mt-2">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </div>
-            </form>
-
+        <div class="col-12 col-sm-12 col-xl-3 bg-light mb-5 pb-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" placeholder="Enter your email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Log In</button>
+          </form>
         </div>
       </div>
-    </main>
-    <footer class="bg-body-secondary">
-      <div class="container-footer container-sm text-center">
-        <nav>
-        <a href="#">About Us</a> | 
-        <a href="#">Privacy Policy</a> | 
-        <a href="#">Contact Us</a>
-        </nav>
-        <p class="mb-0">&copy; 2024 Company Name. All rights reserved.</p>
+    
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row bg-body-secondary">
+        <div class="col-12"><div class="container-footer container-sm text-center">
+          <nav>
+          <a href="#">About Us</a> | 
+          <a href="#">Privacy Policy</a> | 
+          <a href="#">Contact Us</a>
+          </nav>
+          <p class="mb-0">&copy; 2024 Company Name. All rights reserved.</p>
+        </div></div>
       </div>
-
-    </footer>
+    </div>
 
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   </body>
